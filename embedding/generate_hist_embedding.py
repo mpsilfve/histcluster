@@ -2,14 +2,11 @@ import pickle
 import numpy as np
 
 def listToString(s):
-
 	# initialize an empty string
 	str1 = ""
-
 	# traverse in the string
 	for ele in s:
 		str1 += ' '+str(ele)
-
 	# return string
 	return str1
 
