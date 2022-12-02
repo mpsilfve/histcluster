@@ -1,6 +1,19 @@
 import pickle
 import numpy as np
 
+def listToString(s):
+
+	# initialize an empty string
+	str1 = ""
+
+	# traverse in the string
+	for ele in s:
+		str1 += ' '+str(ele)
+
+	# return string
+	return str1
+
+
 with open('/content/drive/MyDrive/embedding/eng-fiction-all/sgns/1970-vocab.pkl', 'rb') as f:
     lex_data = pickle.load(f)
     
