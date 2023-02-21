@@ -57,9 +57,10 @@ for v in large_dict.keys(): ### v is the center(key) of each small syn cluster
         input_string = [u+' '+v]
         cos = cosine_similarity(mean_cos,candi_u)  ##cosine similarity between candidate u and the mean vector 
         candi_dis = numpy.linalg.norm(center_dis-candi_u)  #distance beween candidate u and the center(key)
+        good_nn = TextToTensor_instance.string_to_tensor(input_string)
+        p_good = loaded_model.model.predict(good_nn)[0][0]
         
-        
-        if candi_dis < max_dis and cos >0.8: ##condition
+        if  candi_dis < max_dis and cos > 0.6 and p_good > 0.8: ##condition
             if u not in large_dict[v] and len(u) >2:
               large_dict[v].append('*'+u)
               # expand_valid.append([input_string, p_good])
