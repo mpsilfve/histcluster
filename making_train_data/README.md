@@ -2,7 +2,7 @@
 
 Files under this folder show the process of generating data for model training. The data pairs contains three types of relations: synonym, other relations, and no relations.
 
-# synonym
+# Synonym
 
 All the pairs are extracted from wordnet(synonym.csv). We only use nouns here. All results are stored in synonym_relation_noun.txt
 
