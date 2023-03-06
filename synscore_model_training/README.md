@@ -1,4 +1,4 @@
-The model is a bidirectional RNN. 
+The purpose of this experiment is to train a model capable of performing classification tasks for synonyms.
 
 # Activating the virtual environment
 
@@ -42,7 +42,3 @@ python master.py
 The steps in the pipeline are as follows:
 
 **Text preprocesing** -> **Creating the tensors from text** -> **Training the model** -> **Making predictions**
-
-# Data
-Train222 and Test222 stand for a data combination of syn+other relations
-Train333 and Test333 stand for a data combination of syn+other relations+no relations
