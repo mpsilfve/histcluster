@@ -42,3 +42,7 @@ python master.py
 The steps in the pipeline are as follows:
 
 **Text preprocesing** -> **Creating the tensors from text** -> **Training the model** -> **Making predictions**
+
+# Model ACC
+
+The model reaches an accuracy at 97.17%.
