@@ -46,3 +46,9 @@ The steps in the pipeline are as follows:
 # Model ACC
 
 The model reaches an accuracy at 97.17%.
+no_relation_total_num is 6923
+ACC for no_relation pairs is 0.9607106745630507
+syn_total_num is 6215
+ACC for syn_relation pairs is 0.948189863234111
+other_total_num is 9978
+ACC for other_relation pairs is 0.993886550410904
